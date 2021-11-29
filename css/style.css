@@ -1,0 +1,333 @@
+:root{
+    --main-color:#ff3c00;
+    --white:#ecf0f1;
+    --dark:#030303;
+    --silver:#bdc3c7a8;
+    --default-font-size:16px;
+}
+@media (max-width: 576px){
+    :root{
+        --default-font-size:11px;
+    }
+}
+/* start header */
+header{
+    height:100vh;
+}
+.headerbar{
+    align-items: center;
+    text-align: center;
+    height: 25vh;
+    background-color: var(--main-color);
+    color: var(--white);
+    width: 100%;
+    font-size: var(--default-font-size);
+}
+.icon1{
+    color: var(--dark);
+}
+/* end header */
+/* start nav */
+.mynav{
+    background-color: var(--dark);
+    width: 100%;
+}
+.navbar-dark .navbar-nav .nav-link.active, 
+.navbar-dark .navbar-nav .show>.nav-link ,
+.navbar-dark .navbar-nav .nav-link:focus, 
+.navbar-dark .navbar-nav .nav-link:hover {
+color:var(--white) ;
+transition: 0.7s;
+border-bottom: 1px solid var(--main-color);
+}
+.swiper{
+    height:500px;
+    margin-top:3.5%;
+    position: relative;
+   
+}
+.swiper-slide{
+    background-size: cover;
+display: flex;
+justify-content: center;
+}
+.parallax-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130%;
+    height: 100%;
+    --webkit-background-size:cover;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide .btn-primary{
+    background-color:transparent;
+    color: var(--white);
+    border: 2px solid var(--silver);
+  border-radius: 10px;
+  transition: 1s;
+}
+.swiper-slide .btn-primary:hover{
+    color: var(--white);
+      background-color: var(--main-color);
+}
+form{
+    color: var(--white);
+}
+input[type=subject]:focus , input[type=email]:focus{
+    background-color: transparent;
+}
+input[type=subject] {
+    width: 100%;
+    background-color: transparent;
+    padding: 2% 3%;
+    margin: 8% 0;
+    box-sizing: border-box;
+    border: 2px solid var(--silver);
+    border-radius: 4px;
+    color: var(--white);
+  }
+  input[type=email] {
+      background-color: transparent;
+    width: 100%;
+    padding: 2% 15%;
+    margin: 8% 0;
+    box-sizing: border-box;
+    border: 2px solid var(--silver);
+    border-radius: 4px;
+    color: var(--white);
+  }
+  .formy .deded .mb-3 .form-control{
+    background-color: transparent;
+    width: 100%;
+    padding: 2% 4%;
+    margin: 8% 0;
+    box-sizing: border-box;
+    border: 2px solid var(--silver);
+    border-radius: 4px;
+    color: var(--white);
+  }
+  .formy .deded .mb-3 .btn{
+      background-color:transparent;
+      color: var(--white);
+      border: 2px solid var(--silver);
+    border-radius: 10px;
+    transition: 1s;
+  }
+  .formy .deded .mb-3 .btn:hover{
+      color: var(--white);
+      background-color: var(--main-color);
+  }
+  /* end header */
+.who-we-are{
+    height: 60vh;
+    background-color: var(--white);
+}
+
+.borderkek:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 20%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom:5px solid var(--dark); /* This creates the border. Replace black with whatever color you want. */
+}
+/* end who we are */
+/* start why choose us */
+.choose-us{
+    height: 60vh;
+    background-color:var(--dark);
+    color: var(--white);
+}
+.borderkekw:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 20%; /* Change this to whatever width you want. */
+    padding-top:20px; /* This creates some space between the element and the border. */
+    border-bottom:5px solid var(--white); /* This creates the border. Replace black with whatever color you want. */
+}
+.choosing .keke{
+    color: var(--main-color);
+}
+.who-we-are .btn-primary{
+    background-color:transparent;
+      color: var(--dark);
+      border: 2px solid var(--dark);
+    border-radius: 10px;
+    transition: 1s;
+}
+.who-we-are .btn-primary:hover{
+    color: var(--white);
+    background-color: var(--main-color);
+}
+/* start our service */
+.our-service .service img{
+    width: 100%;
+    height: 100%;
+
+}
+.borderkekwkek:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 20%; /* Change this to whatever width you want. */
+    margin: auto;
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom:5px solid var(--dark); /* This creates the border. Replace black with whatever color you want. */
+}
+.our-service .service .desc{
+background-color: var(--main-color);
+opacity: 0;
+height: 100%;
+width: 100%;
+color: var(--white);
+padding:20% 0;
+transition: 1s;
+}
+.our-service .service .desc .show-more{
+    color: var(--white);
+    border: 1px solid var(--white);
+    padding: 1% 4%;
+    transition: 1s;
+}
+.our-service .service .desc:hover{
+    opacity: 0.8;
+}
+.our-service .service .desc .show-more:hover{
+    background-color: var(--dark);
+}
+.our-service .btn-show-more{
+    background-color: transparent;
+    border: 1px solid var(--dark);
+    font-size: calc(var(--default-font-size) + 10px);
+    color:var(--dark);
+    transition: 1s;
+
+}
+/* .our-service .btn-show-less{
+    background-color: transparent;
+    border: 1px solid var(--dark);
+    font-size: calc(var(--default-font-size) + 10px);
+    color:var(--dark);
+    transition: 1s;
+} */
+
+.our-service .btn-show-more:hover{
+border: 1px solid var(--white);
+background-color: var(--main-color);
+color: var(--white);
+}
+/* .our-service .btn-show-less:hover{
+    border: 1px solid var(--white);
+background-color: var(--main-color);
+color: var(--white);
+} */
+/* end our service  */
+/* staart news */
+.recentNews{
+    height:95vh;
+    background-color: var(--white);
+}
+.recentNews .container .ct-blog img{
+    width: 100%;
+    height: 100%;
+
+}
+    .recentNews {
+        background-color:var(--dark) 
+    }
+    .recentNews .news-title {
+        text-align:center;
+        padding-top:3%;
+        padding-bottom:3%;
+        font-size: var(--default-font-size) + 25px;
+        font-weight:bold;
+        color: var(--main-color);
+    }
+    .recentNews .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 3%;
+    }
+    .recentNews .ct-blog {
+        margin-bottom: 3%;
+    }
+    .ct-blog .inner {
+        background-color:var(--white);
+        color: var(--white);
+        padding: 10%;
+        transition: all 0.2s ease-in-out 0s;
+        cursor: pointer;
+        height: 100%;
+    }
+    .ct-blog .inner:hover {
+        background-color: var(--main-color);
+    }
+    .ct-blog-content .ct-blog-date {
+        border-right: 1px solid var(--dark);
+        padding: 0% 18% 0% 15%;
+        text-align: center;
+    }
+    .ct-blog-content .ct-blog-date span {
+        font-size:var(--default-font-size);
+        color:var(--dark);  
+        font-weight: 700;
+        display: block;
+        line-height: 1;
+    }
+    .ct-blog-content .ct-blog-date strong {
+        font-size: var(--default-font-size);
+        color:var(--white);  
+    }
+    .ct-blog-content .ct-blog-header {
+        color: var(--dark);
+        display: table-cell;
+        font-size:var(--default-font-size);
+        font-weight: 700;
+        line-height: 1.1;
+        padding: 0 20%;
+        vertical-align: top;
+    }
+    .recentNews .btn-news{
+        background-color: transparent;
+        border: 1px solid var(--white);
+        font-size: calc(var(--default-font-size) + 10px);
+        color:var(--white);
+        transition: 1s;
+        text-decoration: none;
+    }
+    .recentNews .btn-news:hover{
+        border: 1px solid var(--white);
+        background-color: var(--main-color);
+        color: var(--white);
+        }
+        .footerbar{
+            align-items: center;
+            text-align: center;
+            height: 25vh;
+            background-color: var(--main-color);
+            color: var(--white);
+            width: 100%;
+            font-size: var(--default-font-size);
+        }
+        .icon1{
+            color: var(--dark);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
